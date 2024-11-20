@@ -3,7 +3,7 @@ print("⏳ Preparing...")
 --// Services
 local plrs = game:GetService("Players")--// Used for BanAsync
 --// Vars
-local list = [[REPLACE WITH DATA]]--// Example:roblox.com/users/1,roblox.com/users/12,roblox.com/users/123
+local list = [[REPLACE WITH DATA]]--// Example:1,2,3
 local uids = {}--// Banlist (data extracted from list)
 local s = os.clock()--// Elapsed time
 --// Convert list into userids
