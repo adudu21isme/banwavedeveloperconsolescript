@@ -1,20 +1,15 @@
 --// adudu21's Ban-Wave Developer-Console Script
-
 print("⏳ Preparing...")
 --// Services
 local plrs = game:GetService("Players")--// Used for BanAsync
-
 --// Vars
 local list = [[REPLACE WITH DATA]]--// Example:roblox.com/users/1,roblox.com/users/12,roblox.com/users/123
 local uids = {}--// Banlist (data extracted from list)
 local s = os.clock()--// Elapsed time
-
 --// Convert list into userids
-for u in string.gmatch(list,"roblox.com/users/(%d+)") do table.insert(uids,tonumber(u))end
-
+for u in string.gmatch(list,"(%d+)") do table.insert(uids,tonumber(u))end
 --// Total userids
 local tuids = #uids
-
 --// Roblox's BanAsync limit is 50
 print("⏳ Started!")
 for n=1,tuids,50 do
