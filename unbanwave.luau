@@ -34,3 +34,4 @@ for n=1,tuids,50 do
    else warn(`❌Failure: {r}`)
    end
 end
+print(`✅Finished unbanning! Took {os.clock()-s} seconds!`)
